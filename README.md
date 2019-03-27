@@ -10,8 +10,11 @@
 <p align="center">
     <em>ConvolutionBox is is a convenient API for convolution visualization, whicn can help you design the architecture of the CNN.</em>
     <br>
-        <a href="https://opensource.org/licenses/MIT">
-        <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License"> 
+        <a >
+        <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"> 
+    </a>
+    <a>
+        <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Passing">
     </a>
     <a href="https://github.com/pyecharts/pyecharts/pulls">
         <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Contributions welcome">

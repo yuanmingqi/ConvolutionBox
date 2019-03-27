@@ -23,3 +23,6 @@
         <img src="https://img.shields.io/badge/python-3.x-blue.svg" >
     </a>
 </p>
+<div align='center'>
+    <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/index.gif'>
+</div>

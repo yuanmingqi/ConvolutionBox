@@ -51,7 +51,8 @@ Python3 + HTML + JavaScript
 
 Flask 1.0.2 + Echarts 4.x
 
----
+
+
 # Usage
 
 ## Convolution
@@ -60,9 +61,11 @@ The "**Convlution**" moudle will accept an image, then perform four consecutive 
 
 **Arg**：
 
-1、Filter Size: An reasonable positive integer.
-2、Filter Strides: An reasonable positive integer.
-3、Padding: Just make a descion, and 'SAME' is recommended.
+* Filter Size: An reasonable positive integer.
+
+* Filter Strides: An reasonable positive integer.
+
+* Padding: Just make a descion, and 'SAME' is recommended.
 
 **Attention**
 
@@ -76,9 +79,11 @@ The "**Pooling**" moudle will accept an feature image, then perform two kinds of
 
 **Arg**：
 
-1、Pool Size: An reasonable positive integer.
-2、Filter Strides: An reasonable positive integer.
-3、Padding: Just make a descion, and 'SAME' is recommended.
+* Pool Size: An reasonable positive integer.
+
+* Filter Strides: An reasonable positive integer.
+
+* Padding: Just make a descion, and 'SAME' is recommended.
 
 **Attention**
 
@@ -105,7 +110,7 @@ $  wget https://codeload.github.com/Mingqi-Yuan/ConvolutionBox/zip/master
 
 
 # Packages required
-The moudle below is required for the ADMP:
+The moudle below is required for the ConvolutionBox:
 
 |Moudle|
 |:--:|

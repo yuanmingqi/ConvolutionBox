@@ -43,20 +43,49 @@ described as a 'Convolution calculator', and it will help you rapidly get the be
 
 # Language & Frame
 
-Language:
+**Language**:
 
 Python3 + HTML + JavaScript
 
-Frame:
+**Frame**:
 
-Flask + Echarts
+Flask 1.0.2 + Echarts 4.x
 
 ---
 # Usage
 
 ## Convolution
 
+The "**Convlution**" moudle will accept an image, then perform four consecutive convolution operations and display the feature maps obtained from each operation.At last, it will generate the gray histograms of the first three convolution features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
+
+**Arg**：
+
+1、Filter Size: An reasonable positive integer.
+2、Filter Strides: An reasonable positive integer.
+3、Padding: Just make a descion, and 'SAME' is recommended.
+
+**Attention**
+
+All the feature maps you generated will be saved in the '**static/images**'
+
+In future versions, we will add more types of convolution operations.
+
 ## Pooling
+
+The "**Pooling**" moudle will accept an feature image, then perform two kinds of operations——"MaxPooling" and "AveragePooling",and display the feature maps obtained from each operation.At last, it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
+
+**Arg**：
+
+1、Pool Size: An reasonable positive integer.
+2、Filter Strides: An reasonable positive integer.
+3、Padding: Just make a descion, and 'SAME' is recommended.
+
+**Attention**
+
+All the feature maps you generated will be saved in the '**static/images**'
+
+In future versions, we will add more types of convolution operations.
+
 
 ## Extractor
 
@@ -67,11 +96,11 @@ Coming soon!
 # Get it now
 Clone it：
 ```
-$ git clone https://github.com/Mingqi-Yuan/ADMP.git
+$ git clone https://github.com/Mingqi-Yuan/ConvolutionBox.git
 ```
 or  you can get the zip file，then make a  **Flask project** with **PyCharm**.
 ```
-$  wget https://codeload.github.com/Mingqi-Yuan/ADMP/zip/master
+$  wget https://codeload.github.com/Mingqi-Yuan/ConvolutionBox/zip/master
 ```
 
 
@@ -81,6 +110,7 @@ The moudle below is required for the ADMP:
 |Moudle|
 |:--:|
 | **TensorFlow** |
+| **Matplotlib** |
 | **Flask**|
 | **json** | 
 | **NumPy**|

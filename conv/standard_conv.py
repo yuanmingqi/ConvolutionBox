@@ -32,11 +32,13 @@ from utils.generate_unique_id import generate_unique_id
 import tensorflow as tf
 import numpy as np
 import cv2
-import os
 
 tf.enable_eager_execution()
 
-def standard_conv(strides, padding, filter_size, path_to_image):
+def standard_conv(strides,
+                  padding,
+                  filter_size,
+                  path_to_image):
     data = {
         'path_conv1': [],
         'path_conv2': [],

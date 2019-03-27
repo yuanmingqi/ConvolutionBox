@@ -25,8 +25,9 @@ SOFTWARE.
 from flask import Flask, request, render_template
 from utils.encoder import encoder
 from utils.get_image import get_image
-from conv.standard_conv import standard_conv
 from utils.get_histogram import get_histogram
+from conv.standard_conv import standard_conv
+from pooling.pooling import avg_pooling, max_pooling
 import json
 
 app = Flask(__name__)
@@ -62,26 +63,61 @@ def conv_show():
 def conv_do():
     path_to_image = get_image()
     filter_size = int(request.values.get('filter_size'))
-    stride = int(request.values.get('strides'))
+    strides = int(request.values.get('strides'))
     padding = str(request.values.get('padding'))
-    data_path = standard_conv(strides= stride,
-                              padding= padding,
-                              filter_size= filter_size,
-                              path_to_image= path_to_image)
-    data = get_histogram(data_path)
+
+    feature_path = standard_conv(strides= strides,
+                                padding= padding,
+                                filter_size= filter_size,
+                                path_to_image= path_to_image)
+    data = get_histogram(feature_path)
     data['source_image'] = path_to_image
+
     data = json.dumps(data, cls= encoder)
     data = json.loads(data)
 
     return render_template('convolution.html', data = data)
 
-@app.route('/pooling', methods=['post', 'get'])
-def pooling():
-    pass
+@app.route('/pooling_show', methods=['post', 'get'])
+def pooling_show():
+    data = {
+        'path_avg_pooling': [],
+        'path_max_pooling': [],
+        'histogram_avg': [],
+        'histogram_max': [],
+    }
+    return render_template('pooling.html', data = data)
 
-@app.route('/extractor', methods=['post', 'get'])
-def extractor():
-    pass
+@app.route('/pooling_do', methods=['post', 'get'])
+def pooling_do():
+    path_to_image = get_image()
+    pool_size = int(request.values.get('pool_size'))
+    strides = int(request.values.get('strides'))
+    padding = str(request.values.get('padding'))
+
+    data = {}
+    data['path_avg_pooling'], data['histogram_avg'] = \
+        avg_pooling(pool_size= pool_size,
+                        strides= strides,
+                        padding= padding,
+                        path_to_image= path_to_image)
+
+    data['path_max_pooling'], data['histogram_max'] = \
+        max_pooling(pool_size= pool_size,
+                       strides= strides,
+                       padding= padding,
+                       path_to_image= path_to_image)
+
+    data['source_image'] = path_to_image
+
+    data = json.dumps(data, cls=encoder)
+    data = json.loads(data)
+
+    return render_template('pooling.html', data = data)
+
+@app.route('/extractor_show', methods=['post', 'get'])
+def extractor_show():
+    return render_template('extractor.html')
 
 @app.errorhandler(404)
 def page_not_found():

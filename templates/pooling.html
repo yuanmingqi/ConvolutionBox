@@ -2,9 +2,308 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PulseAI</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://www.echartsjs.com/asset/theme/vintage.js"></script>
+    <script type="text/javascript">
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+        function preImg(sourceId, targetId) {
+            var url = getFileUrl(sourceId);
+            var imgPre = document.getElementById(targetId);
+            imgPre.src = url;
+        }
+    </script>
+
+    <style>
+        header{
+            display: block;
+            background-color: #FF3030;
+            font-size: 24px;
+            height: 64px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(254, 248, 239);
+            margin: 0;
+            height: 800px;
+        }
+        footer {
+            background-color: #FF3030;
+            color:white;
+            clear:both;
+            text-align:center;
+            width: 100%;
+            position: absolute;
+            top: 800px;
+            padding:10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            border: 1px solid;
+            padding: 2px;
+            font-size: 15px;
+            color: #444;
+            width: 200px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .header_name{
+            position: absolute;
+            top: 15px;
+            left: 45px;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+        }
+        .toolbar{
+            position: absolute;
+            top: 20px;
+            left: 350px;
+            color: white;
+            font-size: 20px;
+            font-family: Roboto, sans-serif;
+        }
+        .img_show{
+            position: absolute;
+            top: 100px;
+            left: 70px;
+
+        }
+        .button-new1 {
+            color: #fef4e9;
+            width: 160px;
+            height: 60px;
+            border: solid 1px #da7c0c;
+            background: #f78d1d;
+            background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+            background: -moz-linear-gradient(top, #faa51a, #f47a20);
+            display: inline;
+            vertical-align: baseline;
+            margin: 10px 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            padding: .5em 2em .55em;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+        }
+        .button-new2{
+            font-size: 15px;
+            display: inline;
+	        width: 160px;
+	        height: 60px;
+	        padding: .5em 2em .55em;
+            vertical-align: baseline;
+	        margin: 10px 10px;
+	        text-align: center;
+	        line-height: 32px;
+	        color: #ffffff;
+	        background: #f44336;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+	        border-radius: .5em;
+	        cursor: pointer;
+	        letter-spacing: 1px;
+        }
+        .clip{
+	    position: absolute;
+	    clip: rect(0, 0, 0, 0);
+            }
+        .histogram{
+            position: absolute;
+            left: 990px;
+            top: 90px;
+        }
+        .avg_pooling{
+            position: absolute;
+            left: 550px;
+            top: 55px;
+        }
+        .max_pooling{
+            position: absolute;
+            left: 550px;
+            top: 405px;
+        }
+    </style>
+    <title>ConvolutionBox</title>
 </head>
-<body>
+
+<body >
+    <header>
+        <div class="header_name">
+            <a href="http://localhost:5000/">
+                ConvolutionBox
+            </a>
+        </div>
+        <div class="toolbar" >
+            <a href="http://localhost:5000/conv_show">
+                Convolution
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 520px;">
+            <a href="http://localhost:5000/pooling_show">
+                Pooling
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 650px;">
+            <a href="http://localhost:5000/extractor_show">
+                Extractor
+            </a>
+        </div>
+    </header>
+
+    <form class="img_show" method="post" action="http://localhost:5000/pooling_do" enctype="multipart/form-data" >
+        <br>
+        <div>
+            <img id="img_file" src="{{ data['source_image'] }}"  width="370" height="370"/>
+        </div>
+        <br>
+        Pool Size:
+        <input type="text" id="pool_size" name="pool_size"/>
+        <br>
+        <br>
+        Filter Strides:
+        <input type="text" id="strides" name="strides"/>
+        <br>
+        <br>
+        Padding:
+        <input type="radio" value="SAME" name="padding"/>SAME
+        <input type="radio" value="VALID" name="padding"/>VALID
+        <!-- <select> */
+            <option value="standard_conv">SConv</option>
+            <option value="depthwise_conv">DConv</option>
+            <option value="pointwise_conv">PConv</option>
+            <option value="depthwise_separable_conv">DSConv</option>
+        </select> -->
+        <br>
+        <br>
+        <input type="file" id="select_images" class="clip" name="photo" onchange="preImg(this.id, 'img_file')" />
+        <label for="select_images" class="button-new2" >
+            Choose File
+        </label>
+        <input type="submit" value="Go" class="button-new1" style="margin-top:15px;"/>
+    </form>
+
+    <div class="histogram">
+        <script>
+            var pooling_avg_data = {{ data['histogram_avg'] }};
+            var pooling_max_data = {{ data['histogram_max'] }};
+        </script>
+        <div id="pooling_avg" style="width: 630px;height:350px;">
+            <script>
+                var pooling_avg = echarts.init(document.getElementById('pooling_avg'), 'vintage');
+
+                // 指定图表的配置项和数据
+                var pooling_avg_option = {
+                    title: {
+                        text: 'The histogram of AveragePooling feature',
+                        textStyle:{
+                            fontSize:14
+                        }
+                    },
+                    tooltip: {},
+                    legend: {
+                        pooling_avg_legend:['Pixels'],
+                        left: '300px'
+                    },
+                    xAxis: {
+                        name: 'Pixels in [0~255]',
+                        nameLocation: 'center',
+                        data: []
+                    },
+                    yAxis: {
+                    },
+                    series: [{
+                        name: 'Pixels',
+                        type: 'bar',
+                        data: pooling_avg_data,
+                        itemStyle: {
+                            color: '#c23531'
+                        },
+                        barWidth: '2'
+                    }],
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                pooling_avg.hideLoading();
+                pooling_avg.setOption(pooling_avg_option);
+            </script>
+        </div>
+        <div id="pooling_max" style="width: 630px;height:350px;">
+            <script>
+                var pooling_max = echarts.init(document.getElementById('pooling_max'), 'vintage');
+
+                // 指定图表的配置项和数据
+                var pooling_max_option = {
+                    title: {
+                        text: 'The histogram of MaxPooling feature',
+                        textStyle:{
+                            fontSize:14
+                        }
+                    },
+                    tooltip: {},
+                    legend: {
+                        pooling_max_legend:['Pixels'],
+                        left: '300px'
+                    },
+                    xAxis: {
+                        name: 'Pixels in [0~255]',
+                        nameLocation: 'center',
+                        data: []
+                    },
+                    yAxis: {
+                    },
+                    series: [{
+                        name: 'Pixels',
+                        type: 'bar',
+                        data: pooling_max_data,
+                        itemStyle: {
+                            color: 'green'
+                        },
+                        barWidth: '2'
+                    }],
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                pooling_max.hideLoading();
+                pooling_max.setOption(pooling_max_option);
+            </script>
+        </div>
+    </div>
+
+    <div>
+        <div class="avg_pooling">
+            <h4 align="center">
+                Average Pooling
+            </h4>
+            <img src="{{ data['path_avg_pooling'] }}"  width="300" height="300"/>
+        </div>
+        <div class="max_pooling">
+            <h4 align="center">
+                Max Pooling
+            </h4>
+            <img src="{{ data['path_max_pooling'] }}"  width="300" height="300"/>
+        </div>
+    </div>
 
 </body>
+
+<footer>
+    Copyright © 2019 - Mingqi Yuan of PulseAI. All Rights Reserved
+</footer>
 </html>

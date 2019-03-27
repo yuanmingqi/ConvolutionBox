@@ -2,9 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PulseAI</title>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://www.echartsjs.com/asset/theme/vintage.js"></script>
+    <script type="text/javascript">
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+        function preImg(sourceId, targetId) {
+            var url = getFileUrl(sourceId);
+            var imgPre = document.getElementById(targetId);
+            imgPre.src = url;
+        }
+    </script>
+
+    <style>
+        header{
+            display: block;
+            background-color: #FF3030;
+            font-size: 24px;
+            height: 64px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            margin: 0;
+            height: 800px;
+        }
+        footer {
+            background-color: #FF3030;
+            color:white;
+            clear:both;
+            text-align:center;
+            width: 100%;
+            position: absolute;
+            top: 800px;
+            padding:10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            border: 1px solid;
+            padding: 2px;
+            font-size: 15px;
+            color: #444;
+            width: 200px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            position: relative;
+            top: 30px;
+            text-align: center;
+            color: #FF3030;
+            font-size: 60px;
+        }
+        .header_name{
+            position: absolute;
+            top: 15px;
+            left: 45px;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+        }
+        .toolbar{
+            position: absolute;
+            top: 20px;
+            left: 350px;
+            color: white;
+            font-size: 20px;
+            font-family: Roboto, sans-serif;
+        }
+
+    </style>
+    <title>ConvolutionBox</title>
 </head>
-<body>
+
+<body >
+    <header>
+        <div class="header_name">
+            <a href="http://localhost:5000/">
+                ConvolutionBox
+            </a>
+        </div>
+        <div class="toolbar" >
+            <a href="http://localhost:5000/conv_show">
+                Convolution
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 520px;">
+            <a href="http://localhost:5000/pooling_show">
+                Pooling
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 650px;">
+            <a href="http://localhost:5000/extractor_show">
+                Extractor
+            </a>
+        </div>
+    </header>
+
+    <h1>
+        Coming soon!
+
+    </h1>
+
+    <div align="center" class="gif">
+        <img style="height: 600px;width: 800px" src= {{ url_for('static', filename= './ex_timg.gif') }} />
+    </div>
 
 </body>
+
+<footer>
+    Copyright © 2019 - Mingqi Yuan of PulseAI. All Rights Reserved
+</footer>
 </html>

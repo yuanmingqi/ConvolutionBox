@@ -71,7 +71,7 @@ The "**Convlution**" moudle will accept an image, then perform four consecutive 
 
 All the feature maps you generated will be saved in the '**static/images**'
 
-In future versions, we will add more types of convolution operations.
+In future versions, we will add more types of convolution operations like 'Pointwise convolution', 'Deepwise separable convolution' and so on.
 
 ## Pooling
 
@@ -88,9 +88,6 @@ The "**Pooling**" moudle will accept an feature image, then perform two kinds of
 **Attention**
 
 All the feature maps you generated will be saved in the '**static/images**'
-
-In future versions, we will add more types of convolution operations.
-
 
 ## Extractor
 
@@ -112,14 +109,13 @@ $  wget https://codeload.github.com/Mingqi-Yuan/ConvolutionBox/zip/master
 # Packages required
 The moudle below is required for the ConvolutionBox:
 
-|Moudle|
-|:--:|
-| **TensorFlow** |
-| **Matplotlib** |
-| **Flask**|
-| **json** | 
-| **NumPy**|
-|**OpenCV**|
+
+* TensorFlow
+* Matplotlib
+* Flask
+* json
+* NumPy
+* OpenCV
 
 The python environment of **Anaconda3** is recommended.
 

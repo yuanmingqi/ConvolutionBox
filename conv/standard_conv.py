@@ -25,7 +25,7 @@ SOFTWARE.
 """
 Encoding = UTF-8
 By Mingqi, Yuan, 2019/3/26
-Usage: An encoder for standard convolution
+Usage: Standard convolution
 """
 
 from utils.generate_unique_id import generate_unique_id

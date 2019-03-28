@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/src/css/lightbox.min.css">
     <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
     <script type="text/javascript" src="https://www.echartsjs.com/asset/theme/vintage.js"></script>
@@ -187,7 +188,9 @@
     <form class="img_show" method="post" action="http://localhost:5000/conv_do" enctype="multipart/form-data" >
         <br>
         <div>
-            <img id="img_file" src="{{ data['source_image'] }}"  width="370" height="370"/>
+            <a href="{{ data['source_image'] }}" data-lightbox="s_image" data-title="Source Image">
+                <img id="img_file" src="{{ data['source_image'] }}"  width="370" height="370"/>
+            </a>
         </div>
         <br>
         Filter Size:
@@ -346,30 +349,38 @@
             <h4 align="center">
                 One layer convolution
             </h4>
-            <img src="{{ data['path_conv1'] }}"  width="300" height="300"/>
+            <a href="{{ data['path_conv1'] }}" data-lightbox="p_conv1" data-title="One layer convolution">
+                <img src="{{ data['path_conv1'] }}"  width="300" height="300"/>
+            </a>
         </div>
         <div class="conv2">
             <h4 align="center">
                 Two layer convolution
             </h4>
-            <img src="{{ data['path_conv2'] }}"  width="300" height="300"/>
+            <a href="{{ data['path_conv2'] }}" data-lightbox="p_conv2" data-title="Two layer convolution">
+                <img src="{{ data['path_conv2'] }}"  width="300" height="300"/>
+            </a>
         </div>
         <div class="conv3">
             <h4 align="center">
                 Three layer convolution
             </h4>
-            <img src="{{ data['path_conv3'] }}"  width="300" height="300"/>
+            <a href="{{ data['path_conv3'] }}" data-lightbox="p_conv3" data-title="Three layer convolution">
+                <img src="{{ data['path_conv3'] }}"  width="300" height="300"/>
+            </a>
         </div>
         <div class="conv4">
             <h4 align="center">
                 Four layer convolution
             </h4>
-            <img src="{{ data['path_conv4'] }}"  width="300" height="300"/>
+            <a href="{{ data['path_conv4'] }}" data-lightbox="p_conv4" data-title="Four layer convolution">
+                <img src="{{ data['path_conv4'] }}"  width="300" height="300"/>
+            </a>
         </div>
     </div>
 
 </body>
-
+    <script src="../static/src/js/lightbox-plus-jquery.js"></script>
 <footer>
     Copyright © 2019 - Mingqi Yuan of PulseAI. All Rights Reserved
 </footer>

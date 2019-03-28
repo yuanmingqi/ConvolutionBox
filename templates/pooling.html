@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/src/css/lightbox.min.css">
     <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
     <script type="text/javascript" src="https://www.echartsjs.com/asset/theme/vintage.js"></script>
@@ -291,16 +292,20 @@
             <h4 align="center">
                 Average Pooling
             </h4>
-            <img src="{{ data['path_avg_pooling'] }}"  width="300" height="300"/>
+            <a href="{{ data['path_avg_pooling'] }}" data-lightbox="p_avg_pooling" data-title="Average Pooling">
+                <img src="{{ data['path_avg_pooling'] }}"  width="300" height="300"/>
+            </a>
         </div>
         <div class="max_pooling">
             <h4 align="center">
                 Max Pooling
             </h4>
-            <img src="{{ data['path_max_pooling'] }}"  width="300" height="300"/>
+            <a href="{{ data['path_max_pooling'] }}" data-lightbox="p_max_pooling" data-title="Max Pooling">
+                <img src="{{ data['path_max_pooling'] }}"  width="300" height="300"/>
+            </a>
         </div>
     </div>
-
+    <script src="../static/src/js/lightbox-plus-jquery.js"></script>
 </body>
 
 <footer>

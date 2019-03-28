@@ -35,24 +35,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    data = {
-        'path_conv1':[],
-        'path_conv2':[],
-        'path_conv3':[],
-        'path_conv4':[],
-        'histogram_1C': [],
-        'histogram_2C': [],
-        'histogram_3C': []
-    }
-    return render_template('index.html', data = data)
+    return render_template('index.html')
 
 @app.route('/conv_show', methods=['post', 'get'])
 def conv_show():
     data = {
-        'path_conv1': [],
-        'path_conv2': [],
-        'path_conv3': [],
-        'path_conv4': [],
+        'path_conv1': '../static/timg1.gif',
+        'path_conv2': '../static/timg1.gif',
+        'path_conv3': '../static/timg1.gif',
+        'path_conv4': '../static/timg1.gif',
+        'source_image': '../static/timg1.gif',
         'histogram_1C': [],
         'histogram_2C': [],
         'histogram_3C': []
@@ -81,8 +73,9 @@ def conv_do():
 @app.route('/pooling_show', methods=['post', 'get'])
 def pooling_show():
     data = {
-        'path_avg_pooling': [],
-        'path_max_pooling': [],
+        'path_avg_pooling': '../static/timg1.gif',
+        'path_max_pooling': '../static/timg1.gif',
+        'source_image': '../static/timg1.gif',
         'histogram_avg': [],
         'histogram_max': [],
     }
@@ -117,6 +110,22 @@ def pooling_do():
 
 @app.route('/extractor_show', methods=['post', 'get'])
 def extractor_show():
+    data = {
+        'path_to_feature': '../static/timg1.gif',
+        'path_to_graph': '../static/ex_timg.gif',
+        'source_image': '../static/timg1.gif',
+        'histogram_to_feature': [],
+    }
+    return render_template('extractor.html', data = data)
+
+@app.route('/extractor_do', methods=['post', 'get'])
+def extractor_do():
+    path_to_image = get_image()
+    pool_size = int(request.values.get('pool_size'))
+    strides = int(request.values.get('strides'))
+    padding = str(request.values.get('padding'))
+
+
     return render_template('extractor.html')
 
 @app.errorhandler(404)

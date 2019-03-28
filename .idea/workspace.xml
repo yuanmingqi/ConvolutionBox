@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/ConvolutionBox$get_image.coverage" NAME="get_image Coverage Results" MODIFIED="1553658131089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$standard_conv.coverage" NAME="standard_conv Coverage Results" MODIFIED="1553687001352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/conv" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1553581528826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/ConvolutionBox$app.coverage" NAME="app Coverage Results" MODIFIED="1553688162275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ConvolutionBox$app.coverage" NAME="app Coverage Results" MODIFIED="1553782259376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$pooling.coverage" NAME="pooling Coverage Results" MODIFIED="1553685884496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pooling" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$encoder.coverage" NAME="encoder Coverage Results" MODIFIED="1553589836971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$get_histogram.coverage" NAME="get_histogram Coverage Results" MODIFIED="1553658716160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
@@ -22,43 +22,53 @@
     <session id="724220894">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="25" />
+          <entry key="css" value="1" />
+          <entry key="gif" value="6" />
+          <entry key="html" value="39" />
           <entry key="jpg" value="22" />
-          <entry key="js" value="1" />
+          <entry key="js" value="3" />
+          <entry key="md" value="1" />
           <entry key="png" value="1" />
-          <entry key="py" value="76" />
+          <entry key="py" value="77" />
+          <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="25" />
-          <entry key="Image" value="23" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Python" value="76" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="39" />
+          <entry key="Image" value="29" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="77" />
+          <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3329" />
+          <entry key="html" value="4725" />
           <entry key="js" value="34" />
-          <entry key="py" value="5807" />
+          <entry key="md" value="1110" />
+          <entry key="py" value="6037" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3329" />
+          <entry key="HTML" value="4725" />
           <entry key="JavaScript" value="34" />
-          <entry key="Python" value="5807" />
+          <entry key="Markdown" value="1110" />
+          <entry key="Python" value="6037" />
         </counts>
       </usages-collector>
     </session>
@@ -68,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state relative-caret-position="2109">
+              <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
               <folding>
                 <element signature="e#1077#1126#0" expanded="true" />
               </folding>
@@ -77,32 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/get_image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#1168#1223#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/pooling.html">
+        <entry file="file://$PROJECT_DIR$/templates/extractor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="279" column="23" lean-forward="true" selection-start-line="279" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+            <state relative-caret-position="141">
+              <caret line="248" column="56" selection-start-line="248" selection-start-column="56" selection-end-line="248" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -113,8 +102,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -131,17 +120,19 @@
         <option value="$PROJECT_DIR$/utils/encoder.py" />
         <option value="$PROJECT_DIR$/utils/generate_unique_id.py" />
         <option value="$PROJECT_DIR$/utils/get_image.py" />
-        <option value="$PROJECT_DIR$/templates/convolution.html" />
         <option value="$PROJECT_DIR$/utils/get_histogram.py" />
         <option value="$PROJECT_DIR$/conv/__init__.py" />
         <option value="$PROJECT_DIR$/pooling/__init__.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/conv/standard_conv.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/pooling/pooling.py" />
+        <option value="$USER_HOME$/Documents/GitHub/ConvolutionBox/README.md" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/templates/convolution.html" />
         <option value="$PROJECT_DIR$/templates/pooling.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/extractor.html" />
+        <option value="$PROJECT_DIR$/conv/standard_conv.py" />
       </list>
     </option>
   </component>
@@ -161,7 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,12 +167,23 @@
             <path>
               <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="extractor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
               <item name="pooling" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
@@ -198,23 +199,27 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Keras/VGGNet19.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/lightbox2-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\templates" />
-      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\static" />
+      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox" />
+      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\src" />
+      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\templates" />
+      <recent name="C:\Users\12394\PycharmProjects\ConvolutionBox\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -230,6 +235,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.app">
+    <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:9244/ConvolutionBox/templates/test.html">
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,28 +252,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_histogram" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/get_histogram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,17 +345,17 @@
       <item itemvalue="Flask server.untitled1" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.get_histogram" />
       <item itemvalue="Python.pooling" />
       <item itemvalue="Python.standard_conv" />
+      <item itemvalue="JavaScript Debug.test.html" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.standard_conv" />
         <item itemvalue="Python.pooling" />
-        <item itemvalue="Python.get_histogram" />
       </list>
     </recent_temporary>
   </component>
@@ -389,12 +375,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2191689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.398017" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.296034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,7 +388,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="CSS Styles" order="13" weight="0.3286119" />
@@ -420,61 +406,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../源代码/12/12-3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../源代码/13/13-1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ADSP/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/layers/convolutional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="292" column="14" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/engine/base_layer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="729" selection-start-line="729" selection-end-line="729" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../源代码/13/13-6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../源代码/13/13-5.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../源代码/13/13-4.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../源代码/13/13-3.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../源代码/13/13-2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/images32019-03-26_21_20_20_867156.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/images22019-03-26_21_20_20_837156.jpg" />
     <entry file="file://$PROJECT_DIR$/templates/images12019-03-26_21_20_20_819108.jpg" />
@@ -535,13 +466,6 @@
         <state relative-caret-position="-171" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/convolution.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/2019-03-27_17_00_00_384992.jpg" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/layers/pooling.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -552,40 +476,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/test.jpg" />
     <entry file="file://$PROJECT_DIR$/static/images/avg_pooling2019-03-27_19_13_13_311577.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/test .jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conv/standard_conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#1173#1228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images2019-03-27_19_46_46_241087.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/test .jpg" />
+    <entry file="file://$PROJECT_DIR$/static/images2019-03-27_19_46_46_241087.jpg" />
     <entry file="file://$PROJECT_DIR$/utils/get_histogram.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#1173#1204#0" expanded="true" />
-            <marker date="1553658780252" expanded="true" signature="1241:1246" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="37" column="66" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="37" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$USER_HOME$/Documents/GitHub/ConvolutionBox/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="356">
+            <caret line="50" selection-start-line="50" selection-end-line="50" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -593,54 +500,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#1168#1223#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pooling/pooling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
+        <state relative-caret-position="1725">
           <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
-          <folding>
-            <element signature="e#1144#1199#0" expanded="true" />
-            <marker date="1553687468580" expanded="true" signature="2552:2553" ph="..." />
-          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/lightbox.css" />
+    <entry file="file://$PROJECT_DIR$/src/js/lightbox.js" />
+    <entry file="file://$PROJECT_DIR$/static/src/js/lightbox.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/timg2.gif" />
+    <entry file="file://$PROJECT_DIR$/static/ex_timg.gif">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        <state relative-caret-position="409">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html" />
+    <entry file="file://$PROJECT_DIR$/templates/convolution.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="357" column="37" lean-forward="true" selection-start-line="357" selection-start-column="37" selection-end-line="357" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pooling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="302" column="98" selection-start-line="302" selection-start-column="98" selection-end-line="302" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/timg1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/timg.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        <state relative-caret-position="2109">
+          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
           <folding>
             <element signature="e#1077#1126#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/extractor.html">
+    <entry file="file://$PROJECT_DIR$/conv/standard_conv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="262">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1173#1228#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pooling.html">
+    <entry file="file://$PROJECT_DIR$/templates/extractor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="279" column="23" lean-forward="true" selection-start-line="279" selection-start-column="23" selection-end-line="279" selection-end-column="23" />
+        <state relative-caret-position="141">
+          <caret line="248" column="56" selection-start-line="248" selection-start-column="56" selection-end-line="248" selection-end-column="56" />
         </state>
       </provider>
     </entry>

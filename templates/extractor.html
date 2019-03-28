@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/src/css/lightbox.min.css">
     <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
     <script type="text/javascript" src="https://www.echartsjs.com/asset/theme/vintage.js"></script>
@@ -35,7 +36,7 @@
             padding: 0;
         }
         body{
-            background-color: white;
+            background-color: rgb(254, 248, 239);
             margin: 0;
             height: 800px;
         }
@@ -68,6 +69,54 @@
             color: #FF3030;
             font-size: 60px;
         }
+        .img_show{
+            position: absolute;
+            top: 80px;
+            left: 70px;
+
+        }
+        .button-new1 {
+            color: #fef4e9;
+            width: 160px;
+            height: 60px;
+            border: solid 1px #da7c0c;
+            background: #f78d1d;
+            background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+            background: -moz-linear-gradient(top, #faa51a, #f47a20);
+            display: inline;
+            vertical-align: baseline;
+            margin: 10px 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            padding: .5em 2em .55em;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+        }
+        .button-new2{
+            font-size: 15px;
+            display: inline;
+	        width: 160px;
+	        height: 60px;
+	        padding: .5em 2em .55em;
+            vertical-align: baseline;
+	        margin: 10px 10px;
+	        text-align: center;
+	        line-height: 32px;
+	        color: #ffffff;
+	        background: #f44336;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+	        border-radius: .5em;
+	        cursor: pointer;
+	        letter-spacing: 1px;
+        }
+        .clip{
+	    position: absolute;
+	    clip: rect(0, 0, 0, 0);
+            }
         .header_name{
             position: absolute;
             top: 15px;
@@ -84,6 +133,22 @@
             color: white;
             font-size: 20px;
             font-family: Roboto, sans-serif;
+
+        }
+        .histogram{
+            position: absolute;
+            left: 1090px;
+            top: 500px;
+        }
+        .feature_map{
+            position: absolute;
+            left: 1200px;
+            top: 50px;
+        }
+        .graph{
+            position: absolute;
+            top: 70px;
+            left: 550px;
         }
 
     </style>
@@ -114,14 +179,105 @@
         </div>
     </header>
 
-    <h1>
-        Coming soon!
+    <form class="img_show" method="post" action="http://localhost:5000/extractor_do" enctype="multipart/form-data" >
+        <br>
+        <div>
+            <img id="img_file" src="{{ data['source_image'] }}"  width="370" height="370"/>
+        </div>
+        <h4>
+            Extractor :
+        </h4>
+        <input type="radio" value="LeNet5" name="extractor"/>LeNet5
+        <input type="radio" value="AlexNet" name="extractor"/>AlexNet
+        <input type="radio" value="VGG16" name="extractor"/>VGG16
+        <input type="radio" value="VGG19" name="extractor"/>VGG19
+        <br>
+        <br>
+        <input type="radio" value="ResNet34" name="extractor"/>ResNet34
+        <input type="radio" value="LeNet5" name="extractor"/>ResNet50
+        <input type="radio" value="ResNet50" name="extractor"/>ResNet101
+        <br>
+        <br>
+        <input type="radio" value="ResNet101" name="extractor"/>GoogleNet
+        <input type="radio" value="SqueezeNet" name="extractor"/>SqueezeNet
+        <input type="radio" value="MobileNet" name="extractor"/>MobileNet
+        <br>
+        <br>
+        <input type="radio" value="InceptionV1" name="extractor"/>InceptionV1
+        <input type="radio" value="InceptionV2" name="extractor"/>InceptionV2
 
-    </h1>
+        <br>
+        <br>
+        <input type="file" id="select_images" class="clip" name="photo" onchange="preImg(this.id, 'img_file')" />
+        <label for="select_images" class="button-new2" >
+            Choose File
+        </label>
+        <input type="submit" value="Go" class="button-new1" style="margin-top:15px;"/>
+    </form>
 
-    <div align="center" class="gif">
-        <img style="height: 600px;width: 800px" src= {{ url_for('static', filename= './ex_timg.gif') }} />
+    <div class="histogram">
+        <script>
+            var extractor_data = {{ data['histogram_to_feature'] }};
+        </script>
+        <div id="extractor" style="width: 630px;height:310px;">
+            <script>
+                var extractor = echarts.init(document.getElementById('extractor'), 'vintage');
+
+                // 指定图表的配置项和数据
+                var extractor_option = {
+                    title: {
+                        text: 'The histogram of convolution feature',
+                        textStyle:{
+                            fontSize:14
+                        }
+                    },
+                    tooltip: {},
+                    legend: {
+                        extractor_legend:['Pixels'],
+                        left: '300px'
+                    },
+                    xAxis: {
+                        name: 'Pixels in [0~255]',
+                        nameLocation: 'center',
+                        data: []
+                    },
+                    yAxis: {
+                    },
+                    series: [{
+                        name: 'Pixels',
+                        type: 'bar',
+                        data: [100, 200, 400, 200, 100],
+                        itemStyle: {
+                            color: '#c23531'
+                        },
+                        barWidth: '2'
+                    }],
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                extractor.hideLoading();
+                extractor.setOption(extractor_option);
+            </script>
+        </div>
     </div>
+    <div class="feature_map">
+        <h4 align="center">
+            Feature Map
+        </h4>
+        <a href="{{ data['path_to_feature'] }}" data-lightbox="feature_maps" data-title="Feature Maps">
+            <img id="feature" src="{{ data['path_to_feature'] }}" width="350" height="350"/>
+        </a>
+    </div>
+    <div class="graph">
+        <h4 align="center">
+            Architecture of Network
+        </h4>
+        <a href="{{ data['path_to_graph'] }}" data-lightbox="network_maps" data-title="Graph">
+            <img src="{{ data['path_to_graph'] }}" width="500" height="510"/>
+        </a>
+
+    </div>
+
+    <script src="../static/src/js/lightbox-plus-jquery.js"></script>
 
 </body>
 

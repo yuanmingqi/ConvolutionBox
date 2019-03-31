@@ -102,7 +102,7 @@ The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5
 * Extractor: The type of extractor.And the supported extractor for current version is as below:
 
 |||Type|||
-|--|--|--|--|--|
+|--|--|--|--|--|--|
 |LeNet5|AlexNet|VGGNet16|VGGNet19|RestNet34|ResNet50|
 
 **Attention**

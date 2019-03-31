@@ -99,12 +99,11 @@ All the feature maps you generated will be saved in the '**static/images**'
 The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5', 'AlexNet', 'ResNet'.The moudle will accept an image, then use the predefined CNN to extract the feature maps.And it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
 
 **Args**:
-* Extractor: The type of extractor.And the supported extractor is as below:
+* Extractor: The type of extractor.And the supported extractor for current version is as below:
 
 |||Type|||
 |--|--|--|--|--|
-|LeNet5|AlexNet|VGGNet16|VGGNet19|RestNet34|
-|ResNet50|ResNet101|SqueezeNet|GoogleNet|MobileNet|
+|LeNet5|AlexNet|VGGNet16|VGGNet19|RestNet34|ResNet50|
 
 **Attention**
 

@@ -10,8 +10,11 @@
 <p align="center">
     <em>ConvolutionBox is is a convenient tool for convolution visualization, whicn can help you design the architecture of the CNN.</em>
     <br>
-        <a >
+    <a>
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"> 
+    </a>
+    <a>
+        <img src="https://img.shields.io/badge/Browser-Chrome-red.svg">
     </a>
     <a>
         <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Passing">
@@ -41,7 +44,7 @@ described as a 'Convolution calculator', and it will help you rapidly get the be
     <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/pooling.png'>
 </div>
 
-# Language & Frame
+# Language & Frame & Browser
 
 **Language**:
 
@@ -51,7 +54,9 @@ Python3 + HTML + JavaScript
 
 Flask 1.0.2 + Echarts 4.x
 
+**Browser**
 
+Gooogle Chrome is recommended
 
 # Usage
 
@@ -71,11 +76,11 @@ The "**Convlution**" moudle will accept an image, then perform four consecutive 
 
 All the feature maps you generated will be saved in the '**static/images**'
 
-In future versions, we will add more types of convolution operations like 'Pointwise convolution', 'Deepwise separable convolution' and so on.
+In future versions, we will add more types of convolution operations like '**Pointwise convolution**', '**Deepwise separable convolution**' and so on.
 
 ## Pooling
 
-The "**Pooling**" moudle will accept an feature image, then perform two kinds of operations——"MaxPooling" and "AveragePooling",and display the feature maps obtained from each operation.At last, it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
+The "**Pooling**" moudle will accept a feature image, then perform two kinds of operations——"MaxPooling" and "AveragePooling",and display the feature maps obtained from each operation.At last, it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
 
 **Arg**：
 
@@ -91,9 +96,20 @@ All the feature maps you generated will be saved in the '**static/images**'
 
 ## Extractor
 
-Coming soon!
+The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5', 'AlexNet', 'ResNet'.The moudle will accept an image, then use the predefined CNN to extract the feature maps.And it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
 
----
+**Args**:
+* Extractor: The type of extractor.And the supported extractor for current version is as below:
+
+|||Type|||
+|--|--|--|--|--|
+|LeNet5|AlexNet|VGGNet16|VGGNet19|RestNet34|ResNet50|
+
+**Attention**
+
+All the feature maps you generated will be saved in the '**static/images**'
+
+
 
 # Get it now
 Clone it：

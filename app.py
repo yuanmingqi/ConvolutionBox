@@ -28,6 +28,7 @@ from utils.get_image import get_image
 from utils.get_histogram import get_histogram
 from conv.standard_conv import standard_conv
 from pooling.pooling import avg_pooling, max_pooling
+from extractor.callback import Call
 import json
 
 app = Flask(__name__)
@@ -58,10 +59,10 @@ def conv_do():
     strides = int(request.values.get('strides'))
     padding = str(request.values.get('padding'))
 
-    feature_path = standard_conv(strides= strides,
-                                padding= padding,
-                                filter_size= filter_size,
-                                path_to_image= path_to_image)
+    feature_path = standard_conv(strides=strides,
+                                padding=padding,
+                                filter_size=filter_size,
+                                path_to_image=path_to_image)
     data = get_histogram(feature_path)
     data['source_image'] = path_to_image
 
@@ -90,16 +91,16 @@ def pooling_do():
 
     data = {}
     data['path_avg_pooling'], data['histogram_avg'] = \
-        avg_pooling(pool_size= pool_size,
-                        strides= strides,
-                        padding= padding,
-                        path_to_image= path_to_image)
+        avg_pooling(pool_size=pool_size,
+                        strides=strides,
+                        padding=padding,
+                        path_to_image=path_to_image)
 
     data['path_max_pooling'], data['histogram_max'] = \
-        max_pooling(pool_size= pool_size,
-                       strides= strides,
-                       padding= padding,
-                       path_to_image= path_to_image)
+        max_pooling(pool_size=pool_size,
+                       strides=strides,
+                       padding=padding,
+                       path_to_image=path_to_image)
 
     data['source_image'] = path_to_image
 
@@ -112,7 +113,7 @@ def pooling_do():
 def extractor_show():
     data = {
         'path_to_feature': '../static/timg1.gif',
-        'path_to_graph': '../static/ex_timg.gif',
+        'path_to_graph': '../static/timg1.gif',
         'source_image': '../static/timg1.gif',
         'histogram_to_feature': [],
     }
@@ -121,12 +122,20 @@ def extractor_show():
 @app.route('/extractor_do', methods=['post', 'get'])
 def extractor_do():
     path_to_image = get_image()
-    pool_size = int(request.values.get('pool_size'))
-    strides = int(request.values.get('strides'))
-    padding = str(request.values.get('padding'))
+    extractor_type = request.values.get('extractor')
+
+    data = {}
+    data['source_image'] = path_to_image
+    data['path_to_graph'] = 'static/graph/' + extractor_type + '.png'
+    data['path_to_feature'] = Call().get_feature(path_to_image=path_to_image, extractor_type = extractor_type)
+    data['path_to_feature'] = data['path_to_feature'][0]
+    data['histogram_to_feature'] = Call().get_histogram(path_to_feature=data['path_to_feature'])
 
 
-    return render_template('extractor.html')
+    data = json.dumps(data, cls=encoder)
+    data = json.loads(data)
+
+    return render_template('extractor.html', data = data)
 
 @app.errorhandler(404)
 def page_not_found():

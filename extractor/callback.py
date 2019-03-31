@@ -24,17 +24,28 @@ SOFTWARE.
 
 """
 Encoding = UTF-8
-By Mingqi, Yuan, 2019/3/18
-Usage: Generate unique id for each image
+By Mingqi, Yuan, 2019/3/31
+Usage: Call the extractor
 """
-from datetime import datetime
 
-def generate_unique_id():
-    time_now = str(datetime.now()).split('.')
-    time_now[0] = time_now[0].split(' ')
-    time_now[0][1] = time_now[0][1].split(':')
-    id = time_now[0][0] + '_' + time_now[0][1][0] + '_' + time_now[0][1][1] + '_' + time_now[0][1][1] + '_' + time_now[1] + '.png'
+from extractor.network import *
+import matplotlib.pyplot as plt
+import cv2
 
-    return id
+class Call():
+    def get_feature(self, extractor_type, path_to_image):
+        data = {
+        'path_to_feature': '',
+        'path_to_graph': '',
+        'source_image': '',
+        'histogram_to_feature': [],
+    }
+        if str(extractor_type) == 'LeNet5':
+            data['path_to_feature'] = LeNet5.LeNet5(path_to_image= path_to_image)
 
+        return data['path_to_feature'], data['path_to_graph']
+
+    def get_histogram(self, path_to_feature):
+        im = cv2.imread(path_to_feature, 0)
+        return (plt.hist(im.ravel(), 256, [0, 256])[0])
 

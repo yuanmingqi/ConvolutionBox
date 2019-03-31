@@ -137,7 +137,7 @@
         }
         .histogram{
             position: absolute;
-            left: 1090px;
+            left: 800px;
             top: 500px;
         }
         .feature_map{
@@ -147,8 +147,8 @@
         }
         .graph{
             position: absolute;
-            top: 70px;
-            left: 550px;
+            top: 50px;
+            left: 750px;
         }
 
     </style>
@@ -219,7 +219,7 @@
         <script>
             var extractor_data = {{ data['histogram_to_feature'] }};
         </script>
-        <div id="extractor" style="width: 630px;height:310px;">
+        <div id="extractor" style="width: 730px;height:310px;">
             <script>
                 var extractor = echarts.init(document.getElementById('extractor'), 'vintage');
 
@@ -246,7 +246,7 @@
                     series: [{
                         name: 'Pixels',
                         type: 'bar',
-                        data: [100, 200, 400, 200, 100],
+                        data: extractor_data,
                         itemStyle: {
                             color: '#c23531'
                         },
@@ -272,7 +272,8 @@
             Architecture of Network
         </h4>
         <a href="{{ data['path_to_graph'] }}" data-lightbox="network_maps" data-title="Graph">
-            <img src="{{ data['path_to_graph'] }}" width="500" height="510"/>
+            <img src="{{ data['path_to_graph'] }}" width="350" height="350"/>
+
         </a>
 
     </div>

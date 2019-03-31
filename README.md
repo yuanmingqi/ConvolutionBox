@@ -101,7 +101,7 @@ The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5
 **Args**:
 * Extractor: The type of extractor.And the supported extractor for current version is as below:
 
-|||Type|||
+|||Type||||
 |--|--|--|--|--|--|
 |LeNet5|AlexNet|VGGNet16|VGGNet19|RestNet34|ResNet50|
 
@@ -140,6 +140,3 @@ The python environment of **Anaconda3** is recommended.
 # License
 [MIT License](LICENSE)
 
-|x||
-|---|---|
-|x|b|

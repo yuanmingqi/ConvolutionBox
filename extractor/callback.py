@@ -41,7 +41,22 @@ class Call():
         'histogram_to_feature': [],
     }
         if str(extractor_type) == 'LeNet5':
-            data['path_to_feature'] = LeNet5.LeNet5(path_to_image= path_to_image)
+            data['path_to_feature'] = LeNet5.LeNet5(path_to_image=path_to_image)
+
+        if str(extractor_type) == 'VGGNet16':
+            data['path_to_feature'] = VGGNet16.VGGNet16(path_to_image=path_to_image)
+
+        if str(extractor_type) == 'VGGNet19':
+            data['path_to_feature'] = VGGNet19.VGGNet19(path_to_image=path_to_image)
+
+        if str(extractor_type) == 'AlexNet':
+            data['path_to_feature'] = AlexNet.AlexNet16(path_to_image=path_to_image)
+
+        if str(extractor_type) == 'ResNet34':
+            data['path_to_feature'] = ResNet34.ResNet34(path_to_image=path_to_image)
+
+        if str(extractor_type) == 'ResNet50':
+            data['path_to_feature'] = ResNet50.ResNet50(path_to_image=path_to_image)
 
         return data['path_to_feature'], data['path_to_graph']
 

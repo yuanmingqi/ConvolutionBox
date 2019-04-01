@@ -72,9 +72,9 @@ The "**Convlution**" moudle will accept an image, then perform four consecutive 
 
 * Padding: Just make a descion, and 'SAME' is recommended.
 
-**Attention**
+**Attention**:
 
-All the feature maps you generated will be saved in the '**static/images**'
+All the feature maps you generated will be saved in the '**static/images/conv**'
 
 In future versions, we will add more types of convolution operations like '**Pointwise convolution**', '**Deepwise separable convolution**' and so on.
 
@@ -90,9 +90,9 @@ The "**Pooling**" moudle will accept a feature image, then perform two kinds of 
 
 * Padding: Just make a descion, and 'SAME' is recommended.
 
-**Attention**
+**Attention**:
 
-All the feature maps you generated will be saved in the '**static/images**'
+All the feature maps you generated will be saved in the '**static/images/pooling**'
 
 ## Extractor
 
@@ -105,10 +105,34 @@ The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5
 |--|--|--|--|--|--|
 |LeNet5|AlexNet|VGGNet16|VGGNet19|RestNet34|ResNet50|
 
-**Attention**
+**Attention**:
 
-All the feature maps you generated will be saved in the '**static/images**'
+All the feature maps you generated will be saved in the '**static/images/extractor**'
 
+## Augmentation
+The "**Augmetation**" moudle provides the function of images data augmetation, with this moudle, you can efficiently accomplish the data augmentation task.In the current version, 9 processing methods are supported:
+
+||**Method**||
+|:--:|:-:|:-:|
+|rotate|zoom in|zoom out|
+|shear|noise|mirroring|
+|saturation adjustment|contrast ratio adjustment|brightness adjustment|
+
+Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
+
+
+**Args**:
+* Methods: The method to augment your data.
+* Input Path: The folder of the images to be processed.
+
+* Output Path: The foleder to save the processed images.
+
+* Amplification factor: An reasonable integer which indicts the amplification factor.
+
+
+**Attention**:
+
+You can do more elaborate operations by changing the source code.
 
 
 # Get it now

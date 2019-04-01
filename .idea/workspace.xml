@@ -9,87 +9,121 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ConvolutionBox$test.coverage" NAME="test Coverage Results" MODIFIED="1554022781939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ConvolutionBox$test.coverage" NAME="test Coverage Results" MODIFIED="1554110832833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$standard_conv.coverage" NAME="standard_conv Coverage Results" MODIFIED="1553687001352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/conv" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$app.coverage" NAME="app Coverage Results" MODIFIED="1554014790340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$VGGNet16.coverage" NAME="VGGNet16 Coverage Results" MODIFIED="1554017707955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractor/network" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$get_histogram.coverage" NAME="get_histogram Coverage Results" MODIFIED="1553658716160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$LeNet5.coverage" NAME="LeNet5 Coverage Results" MODIFIED="1554013183199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractor/network" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$get_image.coverage" NAME="get_image Coverage Results" MODIFIED="1553658131089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/ConvolutionBox$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1553581528826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ConvolutionBox$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1554118462703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$pooling.coverage" NAME="pooling Coverage Results" MODIFIED="1553685884496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pooling" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$ResNet34.coverage" NAME="ResNet34 Coverage Results" MODIFIED="1554022468820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractor/network" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$encoder.coverage" NAME="encoder Coverage Results" MODIFIED="1553589836971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$AlexNet.coverage" NAME="AlexNet Coverage Results" MODIFIED="1554019124961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractor/network" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$ResNet50.coverage" NAME="ResNet50 Coverage Results" MODIFIED="1554022411181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractor/network" />
     <SUITE FILE_PATH="coverage/ConvolutionBox$callback.coverage" NAME="callback Coverage Results" MODIFIED="1554007037773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extractor" />
+    <SUITE FILE_PATH="coverage/ConvolutionBox$augmentation.coverage" NAME="augmentation Coverage Results" MODIFIED="1554040973295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/augmentation" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="724220894">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="gif" value="7" />
-          <entry key="html" value="43" />
+          <entry key="html" value="57" />
+          <entry key="ipynb" value="1" />
           <entry key="jpg" value="22" />
-          <entry key="js" value="3" />
+          <entry key="js" value="4" />
           <entry key="md" value="2" />
-          <entry key="png" value="8" />
-          <entry key="py" value="163" />
+          <entry key="png" value="63" />
+          <entry key="py" value="196" />
           <entry key="rnc" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="43" />
-          <entry key="Image" value="37" />
-          <entry key="JavaScript" value="3" />
+          <entry key="HTML" value="57" />
+          <entry key="IPNB" value="1" />
+          <entry key="Image" value="92" />
+          <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="2" />
-          <entry key="Python" value="163" />
+          <entry key="Python" value="196" />
           <entry key="RNG Compact" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="html" value="4776" />
-          <entry key="js" value="34" />
+          <entry key="html" value="6470" />
+          <entry key="js" value="247" />
           <entry key="md" value="1140" />
-          <entry key="py" value="8970" />
+          <entry key="py" value="12554" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4776" />
-          <entry key="JavaScript" value="34" />
+          <entry key="HTML" value="6470" />
+          <entry key="JavaScript" value="247" />
           <entry key="Markdown" value="1140" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="8970" />
+          <entry key="Python" value="12554" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+              <folding>
+                <element signature="e#1077#1126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extractor/callback.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extractor/network/VGGNet16.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -102,6 +136,9 @@
       <find>layers</find>
       <find>layers.</find>
       <find>x = tf.layers.Activation('relu')(x)</find>
+      <find>self.save_holder</find>
+      <find>np.random.randint(1, 10, 1)</find>
+      <find>self.options</find>
     </findStrings>
     <replaceStrings>
       <replace>tf.nn.relu</replace>
@@ -109,6 +146,9 @@
       <replace>axis=3</replace>
       <replace>tf.</replace>
       <replace>tf.layers.</replace>
+      <replace>self.save_folder</replace>
+      <replace>judge</replace>
+      <replace>self.methods</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -121,28 +161,32 @@
         <option value="$PROJECT_DIR$/utils/get_histogram.py" />
         <option value="$PROJECT_DIR$/conv/__init__.py" />
         <option value="$PROJECT_DIR$/pooling/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/pooling/pooling.py" />
         <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/templates/convolution.html" />
-        <option value="$PROJECT_DIR$/templates/pooling.html" />
-        <option value="$PROJECT_DIR$/conv/standard_conv.py" />
         <option value="$PROJECT_DIR$/extractor/LeNet5.py" />
         <option value="$PROJECT_DIR$/extractor/__init__.py" />
         <option value="$PROJECT_DIR$/utils/generate_unique_id.py" />
-        <option value="$PROJECT_DIR$/extractor/network/LeNet5.py" />
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/templates/extractor.html" />
         <option value="$USER_HOME$/Documents/GitHub/ConvolutionBox/README.md" />
         <option value="$PROJECT_DIR$/extractor/network/DenseNet.py" />
         <option value="$PROJECT_DIR$/extractor/network/__init__.py" />
-        <option value="$PROJECT_DIR$/extractor/callback.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/pooling.html" />
+        <option value="$PROJECT_DIR$/templates/convolution.html" />
+        <option value="$PROJECT_DIR$/augmentation/__init__.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/conv/standard_conv.py" />
+        <option value="$PROJECT_DIR$/pooling/pooling.py" />
+        <option value="$PROJECT_DIR$/extractor/network/LeNet5.py" />
+        <option value="$PROJECT_DIR$/extractor/network/AlexNet.py" />
         <option value="$PROJECT_DIR$/extractor/network/ResNet34.py" />
         <option value="$PROJECT_DIR$/extractor/network/ResNet50.py" />
         <option value="$PROJECT_DIR$/extractor/network/VGGNet16.py" />
         <option value="$PROJECT_DIR$/extractor/network/VGGNet19.py" />
-        <option value="$PROJECT_DIR$/extractor/network/AlexNet.py" />
-        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/templates/augmentation.html" />
+        <option value="$PROJECT_DIR$/templates/extractor.html" />
+        <option value="$PROJECT_DIR$/extractor/callback.py" />
+        <option value="$PROJECT_DIR$/augmentation/augmentation.py" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -153,7 +197,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="330" />
+    <option name="x" value="155" />
     <option name="width" value="1205" />
     <option name="height" value="970" />
   </component>
@@ -162,7 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,18 +221,50 @@
             <path>
               <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="extractor" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="augmentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="extractor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConvolutionBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConvolutionBox" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/ConvolutionBox/README.md" />
+    <property name="last_opened_file_path" value="$USER_HOME$/HCNP-AI.ipynb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
@@ -220,29 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="AlexNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extractor/network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extractor/network/AlexNet.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="ResNet34" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,7 +340,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="VGGNet16" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="augmentation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,12 +348,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extractor/network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/augmentation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extractor/network/VGGNet16.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/augmentation/augmentation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -331,6 +384,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <module name="untitled1" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="untitled1" type="Python.FlaskServer" factoryName="Flask server">
       <module name="untitled1" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -349,18 +417,18 @@
     <list>
       <item itemvalue="Flask server.untitled1" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.VGGNet16" />
-      <item itemvalue="Python.AlexNet" />
       <item itemvalue="Python.ResNet50" />
       <item itemvalue="Python.ResNet34" />
+      <item itemvalue="Python.augmentation" />
+      <item itemvalue="Flask server.Flask (app.py)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.augmentation" />
         <item itemvalue="Python.ResNet34" />
         <item itemvalue="Python.ResNet50" />
-        <item itemvalue="Python.AlexNet" />
-        <item itemvalue="Python.VGGNet16" />
       </list>
     </recent_temporary>
   </component>
@@ -377,9 +445,42 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42351276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="CSS Styles" order="13" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.19772118" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2627346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -402,7 +503,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.19772118" />
       <window_info anchor="right" id="Database" order="4" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -411,376 +512,168 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extractor/__init__.py">
+    <entry file="file://$PROJECT_DIR$/test/_zoom_in_69_2019-03-31_21_24_24_999393.png" />
+    <entry file="file://$PROJECT_DIR$/test/_saturation_2019-03-31_21_24_24_991414.png" />
+    <entry file="file://$PROJECT_DIR$/test/_saturation_2019-03-31_21_24_24_048445.png" />
+    <entry file="file://$PROJECT_DIR$/test/_noise_2019-03-31_21_24_24_058393.png" />
+    <entry file="file://$PROJECT_DIR$/test/_brightness_2019-03-31_21_24_24_039050.png" />
+    <entry file="file://$PROJECT_DIR$/test/_contrast_ratio_2019-03-31_21_24_24_020433.png" />
+    <entry file="file://$PROJECT_DIR$/test/_rotate_17_2019-03-31_21_27_27_047777.png" />
+    <entry file="file://$PROJECT_DIR$/test/noise_2019-03-31_21_27_27_043787.png" />
+    <entry file="file://$PROJECT_DIR$/test/saturation_2019-03-31_21_27_27_058786.png" />
+    <entry file="file://$PROJECT_DIR$/test/shear_2019-03-31_21_27_27_134586.png" />
+    <entry file="file://$PROJECT_DIR$/test/shear_2019-03-31_21_27_27_054798.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_in_25_2019-03-31_21_27_27_126565.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_out_59_2019-03-31_21_27_27_074742.png" />
+    <entry file="file://$PROJECT_DIR$/test/contrast_ratio_2019-03-31_21_27_27_138575.png" />
+    <entry file="file://$PROJECT_DIR$/test/mirroring_2019-03-31_21_28_28_348048.png" />
+    <entry file="file://$PROJECT_DIR$/test/mirroring_2019-03-31_21_28_28_376883.png" />
+    <entry file="file://$PROJECT_DIR$/test/rotate_6_2019-03-31_21_28_28_339851.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_out_35_2019-03-31_21_28_28_314949.png" />
+    <entry file="file://$PROJECT_DIR$/test/noise_2019-03-31_21_28_28_363008.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_out_38_2019-03-31_21_28_28_430082.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_in_17_2019-03-31_21_28_28_420765.png" />
+    <entry file="file://$PROJECT_DIR$/test/brightness_2019-03-31_21_28_28_368349.png" />
+    <entry file="file://$PROJECT_DIR$/test/brightness_2019-03-31_21_28_28_300096.png" />
+    <entry file="file://$PROJECT_DIR$/test/brightness_2019-03-31_21_32_32_026873.png" />
+    <entry file="file://$PROJECT_DIR$/test/brightness_2019-03-31_21_32_32_066121.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_in_26_2019-03-31_21_32_32_103810.png" />
+    <entry file="file://$PROJECT_DIR$/test/zoom_out_23_2019-03-31_21_32_32_057849.png" />
+    <entry file="file://$PROJECT_DIR$/test/contrast_ratio_2019-03-31_21_32_32_086384.png" />
+    <entry file="file://$PROJECT_DIR$/test/contrast_ratio_2019-03-31_21_32_32_075821.png" />
+    <entry file="file://$PROJECT_DIR$/test/saturation_2019-03-31_21_36_36_849521.png" />
+    <entry file="file://$PROJECT_DIR$/templates/convolution.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="-7011" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/layers/__init__.py">
+    <entry file="file://$PROJECT_DIR$/conv/standard_conv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2384">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#714#752#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="65" column="41" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/layers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pooling/pooling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/2019-03-31_14_22_22_760886.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conv/standard_conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/generate_unique_id.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="35" column="129" selection-start-line="35" selection-start-column="129" selection-end-line="35" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/LeNet52019-03-31_14_47_47_796498.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/timg.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pooling.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="297" column="14" lean-forward="true" selection-start-line="297" selection-start-column="14" selection-end-line="297" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/convolution.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="357" column="37" lean-forward="true" selection-start-line="357" selection-start-column="37" selection-end-line="357" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/ConvolutionBox/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="527">
-            <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/applications/vgg16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/applications/vgg16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/extractor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-          <folding>
-            <element signature="e#1077#1126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/vgg16/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/vgg16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="172" column="74" lean-forward="true" selection-start-line="107" selection-start-column="4" selection-end-line="172" selection-end-column="74" />
-          <folding>
-            <element signature="e#154#192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/vgg19/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/applications/vgg19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/vgg19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="184" column="74" lean-forward="true" selection-start-line="107" selection-start-column="4" selection-end-line="184" selection-end-column="74" />
+        <state relative-caret-position="352">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extractor/network/LeNet5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#1155#1210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/densenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/applications/densenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/densenet/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/resnet50/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/applications/resnet50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/resnet50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="254" lean-forward="true" selection-start-line="254" selection-end-line="254" />
-          <folding>
-            <element signature="e#180#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/ops/nn_impl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="264" column="4" selection-start-line="264" selection-start-column="4" selection-end-line="264" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/layers/pooling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="265" column="8" selection-start-line="265" selection-start-column="8" selection-end-line="265" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/layers/convolutional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1178">
-          <caret line="217" column="6" selection-start-line="217" selection-start-column="6" selection-end-line="217" selection-end-column="6" />
-          <folding>
-            <element signature="e#767#805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/_api/v1/nn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="80" column="40" lean-forward="true" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/_api/v1/layers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractor/network/ResNet34.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="95" column="45" lean-forward="true" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="45" />
-          <folding>
-            <element signature="e#1156#1211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractor/network/ResNet50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
-          <folding>
-            <element signature="e#1156#1211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractor/network/VGGNet19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="125" column="45" selection-start-line="125" selection-start-column="45" selection-end-line="125" selection-end-column="45" />
-          <folding>
-            <element signature="e#1156#1211#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="452">
+          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extractor/network/AlexNet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
-          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+          <caret line="79" column="55" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractor/network/ResNet34.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractor/network/ResNet50.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="178" column="42" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractor/network/VGGNet19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/augmentation/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/extractor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="204" lean-forward="true" selection-start-line="204" selection-end-line="204" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/graph/LeNet5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/graph/VGGNet16.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/augmentation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1331">
+          <caret line="257" column="18" selection-start-line="257" selection-start-column="18" selection-end-line="257" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/augmentation/augmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1568">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
           <folding>
-            <element signature="e#1155#1210#0" expanded="true" />
+            <element signature="e#1161#1170#0" expanded="true" />
+            <marker date="1554117488397" expanded="true" signature="1293:1298" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extractor/network/VGGNet16.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="113" column="45" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+        <state relative-caret-position="504">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/applications/nasnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/nasnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8664" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/nasnet/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/keras/applications/xception/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/tensorflow/python/keras/applications/xception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/xception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2223" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/applications/mobilenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/keras_applications/mobilenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7685" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extractor/network/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="62" selection-start-column="62" selection-end-column="62" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/static/images/extractor/LeNet5_2019-04-01_19_11_11_956087.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/extractor/callback.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="409">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/conv/12019-04-01_19_08_08_686668.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
           <folding>
-            <element signature="e#1156#1187#0" expanded="true" />
-            <marker date="1554021563514" expanded="true" signature="1245:1250" ph="..." />
+            <element signature="e#1077#1126#0" expanded="true" />
           </folding>
         </state>
       </provider>

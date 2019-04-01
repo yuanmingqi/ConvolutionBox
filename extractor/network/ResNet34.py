@@ -93,7 +93,7 @@ def ResNet34(path_to_image):
     feature = feature.astype('uint8')
     feature = np.reshape(feature, [32, 16])
 
-    result_dir = 'static/images/' + 'ResNet34' + generate_unique_id()
+    result_dir = 'static/images/extractor/' + 'ResNet34_' + generate_unique_id()
     cv2.imwrite(result_dir, feature)
 
     return result_dir

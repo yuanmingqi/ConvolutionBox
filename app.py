@@ -29,6 +29,7 @@ from utils.get_histogram import get_histogram
 from conv.standard_conv import standard_conv
 from pooling.pooling import avg_pooling, max_pooling
 from extractor.callback import Call
+from augmentation.augmentation import Augmentation
 import json
 
 app = Flask(__name__)
@@ -128,14 +129,52 @@ def extractor_do():
     data['source_image'] = path_to_image
     data['path_to_graph'] = 'static/graph/' + extractor_type + '.png'
     data['path_to_feature'] = Call().get_feature(path_to_image=path_to_image, extractor_type = extractor_type)
-    data['path_to_feature'] = data['path_to_feature'][0]
+    print(data['path_to_feature'])
     data['histogram_to_feature'] = Call().get_histogram(path_to_feature=data['path_to_feature'])
-
 
     data = json.dumps(data, cls=encoder)
     data = json.loads(data)
 
     return render_template('extractor.html', data = data)
+
+@app.route('/augmentation_show', methods=['post', 'get'])
+def augmentation_show():
+    data = {'img_show':['../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif',
+                     '../static/timg1.gif'],
+            'value': []}
+
+    return render_template('augmentation.html', data = data)
+
+@app.route('/augmentation_do', methods=['post', 'get'])
+def augmentation_do():
+    augmentation_way = []
+    for i in range(9):
+        temp = request.values.get('augmentation_way_' + str(i+1))
+        if temp is not None:
+            augmentation_way.append(int(temp))
+    input_path = request.values.get('input_path')
+    output_path = request.values.get('output_path')
+    amplification_factor = int(request.values.get('amplification_factor'))
+    print(amplification_factor)
+
+    statistics, img_show = Augmentation(path_to_image_folder=input_path,
+                                        path_to_save_folder=output_path,
+                                        factor=amplification_factor,
+                                        methods=augmentation_way).main()
+    data = {}
+    data['value'] = statistics['value']
+    data['img_show'] = img_show
+    data = json.dumps(data, cls=encoder)
+    data = json.loads(data)
+
+    return render_template('augmentation.html', data = data)
 
 @app.errorhandler(404)
 def page_not_found():

@@ -57,7 +57,7 @@ def avg_pooling(strides,
     feature_map = np.matrix(feature_map.numpy())
     feature_map = feature_map.astype('uint8')
 
-    result_dir = 'static/images/' + 'avg_pooling' + generate_unique_id()
+    result_dir = 'static/images/pooling/' + 'avg_pooling' + generate_unique_id()
     cv2.imwrite(result_dir, feature_map)
     im = cv2.imread(result_dir, 0)
 
@@ -91,7 +91,7 @@ def max_pooling(strides,
 
     feature_map = feature_map.astype('uint8')
 
-    result_dir = 'static/images/' + generate_unique_id()
+    result_dir = 'static/images/pooling/' + generate_unique_id()
     cv2.imwrite(result_dir, feature_map)
     im = cv2.imread(result_dir, 0)
 

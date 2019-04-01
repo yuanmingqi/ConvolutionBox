@@ -123,7 +123,7 @@ def VGGNet19(path_to_image):
     feature = x.numpy()
     feature = feature.astype('uint8')
     feature = feature[0][:, :, 0]
-    result_dir = 'static/images/' + 'VGGNet19' + generate_unique_id()
+    result_dir = 'static/images/extractor/' + 'VGGNet19_' + generate_unique_id()
     cv2.imwrite(result_dir,feature)
 
     return result_dir

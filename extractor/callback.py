@@ -58,7 +58,7 @@ class Call():
         if str(extractor_type) == 'ResNet50':
             data['path_to_feature'] = ResNet50.ResNet50(path_to_image=path_to_image)
 
-        return data['path_to_feature'], data['path_to_graph']
+        return data['path_to_feature']
 
     def get_histogram(self, path_to_feature):
         im = cv2.imread(path_to_feature, 0)

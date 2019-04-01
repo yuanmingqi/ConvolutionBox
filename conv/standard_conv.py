@@ -63,7 +63,7 @@ def standard_conv(strides,
         img_data = np.matrix(img_data.numpy())
         img_data = img_data.astype('uint8')
 
-        result_dir = 'static/images/' + str(i) + generate_unique_id()
+        result_dir = 'static/images/conv/' + str(i) + generate_unique_id()
         cv2.imwrite(result_dir, img_data)
         key = 'path_conv' + str(i+1)
         # save the path of each feature map

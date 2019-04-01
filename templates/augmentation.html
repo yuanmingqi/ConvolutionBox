@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/src/css/lightbox.min.css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://echarts.baidu.com/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://www.echartsjs.com/asset/theme/vintage.js"></script>
+
+    <style>
+        header{
+            display: block;
+            background-color: #FF3030;
+            font-size: 24px;
+            height: 64px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(254, 248, 239);
+            margin: 0;
+            height: 800px;
+        }
+        footer {
+            background-color: #FF3030;
+            color:white;
+            clear:both;
+            text-align:center;
+            width: 100%;
+            position: absolute;
+            top: 800px;
+            padding:10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            border: 1px solid;
+            padding: 2px;
+            font-size: 15px;
+            color: #444;
+            width: 200px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .header_name{
+            position: absolute;
+            top: 15px;
+            left: 45px;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Roboto, sans-serif;
+        }
+        .toolbar{
+            position: absolute;
+            top: 20px;
+            left: 350px;
+            color: white;
+            font-size: 20px;
+            font-family: Roboto, sans-serif;
+        }
+        .img_show{
+            position: absolute;
+            top: 50px;
+            left: 1040px;
+
+        }
+        .button-new1 {
+            position: absolute;
+            left: 50px;
+            color: #fef4e9;
+            width: 160px;
+            height: 60px;
+            border: solid 1px #da7c0c;
+            background: #f78d1d;
+            background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+            background: -moz-linear-gradient(top, #faa51a, #f47a20);
+            display: inline;
+            vertical-align: baseline;
+            margin: 10px 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            padding: .5em 2em .55em;
+            -webkit-border-radius: .5em;
+            -moz-border-radius: .5em;
+            border-radius: .5em;
+        }
+        .histogram{
+            position: absolute;
+            left: 500px;
+            top: 100px;
+        }
+        .params{
+            position: absolute;
+            left: 40px;
+            top: 80px;
+        }
+    </style>
+    <title>ConvolutionBox</title>
+</head>
+
+<body >
+    <header>
+        <div class="header_name">
+            <a href="http://localhost:5000/">
+                ConvolutionBox
+            </a>
+        </div>
+        <div class="toolbar" >
+            <a href="http://localhost:5000/conv_show">
+                Convolution
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 520px;">
+            <a href="http://localhost:5000/pooling_show">
+                Pooling
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 650px;">
+            <a href="http://localhost:5000/extractor_show">
+                Extractor
+            </a>
+        </div>
+        <div class="toolbar" style="position: absolute;left: 780px;">
+            <a href="http://localhost:5000/augmentation_show">
+                Augmentation
+            </a>
+        </div>
+    </header>
+
+    <form class="params" method="post" action="http://localhost:5000/augmentation_do" enctype="multipart/form-data" >
+        <h4>
+            Choose the method to augment your data:
+        </h4>
+        <div class="method_1" style="position: absolute;left: 20px">
+
+            <input type="checkbox" name="augmentation_way_1" value="1"/>Rotate
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_2" value="2"/>Zoom in
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_3" value="3"/>Zoom out
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_4" value="4"/>Shear
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_5" value="5"/>Mirroring
+            <br>
+            <br>
+        </div>
+        <div class="method_2" style="position: absolute;left: 180px">
+            <input type="checkbox" name="augmentation_way_6" value="6"/>Saturation
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_7" value="7"/>Add noise
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_8" value="8"/>Contrast ratio
+            <br>
+            <br>
+            <input type="checkbox" name="augmentation_way_9" value="9"/>Brightness
+            <br>
+            <br>
+        </div>
+        <div class="parameter" style="position: absolute;left: 20px;top: 245px;width: 500px;">
+            <h4>
+                 Input Path:
+            </h4>
+            <input type="text" id="input_path" name="input_path" style="width: 310px"/>
+            <h4>
+                 Output Path:
+            </h4>
+            <input type="text" id="output_path" name="output_path" style="width: 310px"/>
+            <h4>
+                Amplification factor:
+            </h4>
+            <input type="text" id="amplification_factor" name="amplification_factor" style="width: 310px"/>
+            <br>
+            <br>
+            <input type="submit" value="Go" class="button-new1" style="margin-top:15px"/>
+        </div>
+    </form>
+
+    <div class="img_show">
+        <h4 align="center">
+            The sample of augmentation:
+        </h4>
+        <a href="{{ data['img_show'][0] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][0] }}" width="200" height="200px" />
+        </a>
+        <a href="{{ data['img_show'][1] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][1] }}" width="200" height="200px" />
+        </a>
+        <a href="{{ data['img_show'][2] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][2] }}" width="200" height="200px" />
+        </a>
+        <br>
+        <br>
+        <a href="{{ data['img_show'][3] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][3] }}" width="200" height="200px" />
+        </a>
+        <a href="{{ data['img_show'][4] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][4] }}" width="200" height="200px" />
+        </a>
+        <a href="{{ data['img_show'][5] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][5] }}" width="200" height="200px" />
+        </a>
+        <br>
+        <br>
+        <a href="{{ data['img_show'][6] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][6] }}" width="200" height="200px" />
+        </a>
+        <a href="{{ data['img_show'][7] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][7] }}" width="200" height="200px" />
+        </a>
+        <a href="{{ data['img_show'][8] }}" data-lightbox="show">
+            <img src="{{ data['img_show'][8] }}" width="200" height="200px" />
+        </a>
+        <br>
+        <br>
+    </div>
+
+    <div class="histogram" id="distribution" style="height: 500px;width: 500px">
+        <script>
+            var distribution_data = [];
+            const name = ['Rotate', 'Zoom in', 'Zoom out', 'Shear', 'Mirroring',
+                'Noise', 'Brightness', 'Saturation', 'Contrast ratio'];
+            var value = {{ data['value'] }};
+
+            for (i=0;i<9;i++){
+                distribution_data[i] = {};
+                distribution_data[i].name = name[i];
+                distribution_data[i].value = value[i];
+                }
+        </script>
+        <script>
+            var distribution_Chart = echarts.init(document.getElementById('distribution'));
+            option = {
+                title: {
+                  text: 'The distribution of the augmentation'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b}: {c} ({d}%)"
+                },
+                legend: {
+                    orient: 'horizontal',
+                    top: '450px',
+                    align: 'left',
+                    data:['Rotate','Zoom in','Zoom out','Shear','Mirroring',
+                    'Noise', 'Brightness', 'Saturation', 'Contrast Ratio']
+                },
+                series: [
+                    {
+                        name:'访问来源',
+                        type:'pie',
+                        radius: ['50%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                show: true,
+                                textStyle: {
+                                    fontSize: '30',
+                                    fontWeight: 'bold'
+                                }
+                            }
+                        },
+                        labelLine: {
+                            normal: {
+                                show: false
+                            }
+                        },
+                        data:distribution_data
+                    }
+                ]
+            };
+            distribution_Chart.setOption(option);
+        </script>
+    </div>
+
+</body>
+    <script src="../static/src/js/lightbox-plus-jquery.js"></script>
+<footer>
+    Copyright © 2019 - Mingqi Yuan of PulseAI. All Rights Reserved
+</footer>
+</html>

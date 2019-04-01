@@ -177,6 +177,11 @@
                 Extractor
             </a>
         </div>
+        <div class="toolbar" style="position: absolute;left: 780px;">
+            <a href="http://localhost:5000/augmentation_show">
+                Augmentation
+            </a>
+        </div>
     </header>
 
     <form class="img_show" method="post" action="http://localhost:5000/extractor_do" enctype="multipart/form-data" >
@@ -190,24 +195,14 @@
         <input type="radio" value="LeNet5" name="extractor"/>LeNet5
         <input type="radio" value="AlexNet" name="extractor"/>AlexNet
         <input type="radio" value="VGG16" name="extractor"/>VGG16
+        <br>
+        <br>
         <input type="radio" value="VGG19" name="extractor"/>VGG19
-        <br>
-        <br>
         <input type="radio" value="ResNet34" name="extractor"/>ResNet34
-        <input type="radio" value="LeNet5" name="extractor"/>ResNet50
-        <input type="radio" value="ResNet50" name="extractor"/>ResNet101
+        <input type="radio" value="ResNet50" name="extractor"/>ResNet50
         <br>
         <br>
-        <input type="radio" value="ResNet101" name="extractor"/>GoogleNet
-        <input type="radio" value="SqueezeNet" name="extractor"/>SqueezeNet
-        <input type="radio" value="MobileNet" name="extractor"/>MobileNet
-        <br>
-        <br>
-        <input type="radio" value="InceptionV1" name="extractor"/>InceptionV1
-        <input type="radio" value="InceptionV2" name="extractor"/>InceptionV2
 
-        <br>
-        <br>
         <input type="file" id="select_images" class="clip" name="photo" onchange="preImg(this.id, 'img_file')" />
         <label for="select_images" class="button-new2" >
             Choose File

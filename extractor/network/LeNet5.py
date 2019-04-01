@@ -50,7 +50,7 @@ def LeNet5(path_to_image):
     feature = feature.numpy()
     feature = feature.astype('uint8')
     feature = feature[0][:, :, 0]
-    result_dir = 'static/images/' + 'LeNet5' + generate_unique_id()
+    result_dir = 'static/images/extractor/' + 'LeNet5_' + generate_unique_id()
     cv2.imwrite(result_dir,feature)
 
     return result_dir

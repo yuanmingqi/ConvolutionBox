@@ -90,12 +90,12 @@ def GoogLeNet(path_to_image):
     feature = feature.astype('uint8')
     feature = feature[0][:, :, 0]
     result_dir = 'static/images/' + 'GoogLeNet' + generate_unique_id()
-    #result_dir = 'test/' + 'GoogLeNet_inception_5b' + generate_unique_id()
+    #result_dir = 'test/' + 'GoogLeNet' + generate_unique_id()
     cv2.imwrite(result_dir, feature)
     #avg pool
     net = tf.layers.average_pooling2d(net, [7, 7], 1, padding="SAME")
     net = tf.layers.Dropout(0.6)(net)
-    logit = tf.layers.Dense(num_classes)(net)
+    logit = tf.layers.Dense(num_classes, activation=tf.nn.softmax)(net)
     return  result_dir
 
 if __name__ == "__main__":

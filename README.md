@@ -41,7 +41,7 @@ because sometimes we just need to know the capability of the module.So I build t
 described as a 'Convolution calculator', and it will help you rapidly get the behavior of moudle.Hope you will enjoy that!   
 
 <div align='center'>
-    <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/pooling.png'>
+    <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/conv.png'>
 </div>
 
 # Language & Frame & Browser
@@ -80,6 +80,10 @@ In future versions, we will add more types of convolution operations like '**Poi
 
 ## Pooling
 
+<div align='center'>
+    <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/pooling.png'>
+</div>
+
 The "**Pooling**" moudle will accept a feature image, then perform two kinds of operations——"MaxPooling" and "AveragePooling",and display the feature maps obtained from each operation.At last, it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
 
 **Arg**：
@@ -96,6 +100,10 @@ All the feature maps you generated will be saved in the '**static/images/pooling
 
 ## Extractor
 
+<div align='center'>
+    <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/extractor.png'>
+</div>
+
 The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5', 'AlexNet', 'ResNet'.The moudle will accept an image, then use the predefined CNN to extract the feature maps.And it will generate the gray histograms of the features.Before you click the "Go", just make sure all the parameters are filled in or you'll get '**Internel server error**'.
 
 **Args**:
@@ -110,6 +118,11 @@ The "**Extractor**" moudle contains lots of convolution networks such as 'LeNet5
 All the feature maps you generated will be saved in the '**static/images/extractor**'
 
 ## Augmentation
+
+<div align='center'>
+    <img src= 'https://github.com/Mingqi-Yuan/ConvolutionBox/blob/master/example/augmentation.png'>
+</div>
+
 The "**Augmetation**" moudle provides the function of images data augmetation, with this moudle, you can efficiently accomplish the data augmentation task.In the current version, 9 processing methods are supported:
 
 ||**Method**||

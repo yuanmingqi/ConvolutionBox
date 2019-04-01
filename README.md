@@ -8,7 +8,7 @@
 
 ---
 <p align="center">
-    <em>ConvolutionBox is is a convenient tool for convolution visualization, whicn can help you design the architecture of the CNN.</em>
+    <em>ConvolutionBox is a convenient tool for convolution visualization, whicn can help you design the architecture of the CNN.</em>
     <br>
     <a>
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"> 
